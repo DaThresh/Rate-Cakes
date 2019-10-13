@@ -1,0 +1,17 @@
+.box{
+    border: 2px solid black;
+}
+
+.cake{
+    max-height: 200px;   
+}
+
+.img-box{
+    height: 100%;
+    width: 100%;
+}
+
+.right-box{
+    max-height: 500px;
+    overflow: scroll;
+}

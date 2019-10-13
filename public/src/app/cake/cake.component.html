@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col">
+        <h2>Baked by {{ cakeToShow.baker }}</h2>
+
+        <div class="row">
+            <div class="col-6">
+                <img [src]="cakeToShow.url" alt="cake" class="img-box">
+            </div>
+            <div class="col-6">
+                <div class="row mb-3">
+                    <h6>Average rating: {{ cakeToShow.avg }}</h6>
+                </div>
+                <div *ngFor="let rating of cakeToShow.ratings" class="row mt-2 mb-2 pl-3">
+                    <div class="col">
+                        <h6 class="row">{{ rating.comment }}</h6>
+                        <h6 class="row">{{ rating.stars }} star(s)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
